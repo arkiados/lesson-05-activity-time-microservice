@@ -11,6 +11,7 @@ def get_time():
     '''
     ntp_client = ntplib.NTPClient()
     ntp_response = ntp_client.request('pool.ntp.org')
+    time_string = str(ntp_response.tx_time)
     return ntp_response.tx_time
 
 @app.route('/', methods=['GET'])
