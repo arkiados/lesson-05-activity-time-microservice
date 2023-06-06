@@ -1,6 +1,5 @@
-import os
 import ntplib
-from flask import Flask, send_file, Response
+from flask import Flask
 
 app = Flask(__name__)
 
